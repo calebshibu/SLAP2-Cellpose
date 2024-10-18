@@ -19,7 +19,7 @@ def main(input, output):
     # images = np.concatenate(tiff_files, axis=2)
 
     # Normalize images to 0-1 range
-    # tiff_files = tiff_files.astype(np.float32) / 255.0
+    tiff_files = tiff_files.astype(np.float32) / 255.0
 
     # Evaluate the model on the input images
     results = model.eval(tiff_files, channels=[0, 0])
