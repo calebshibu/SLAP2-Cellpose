@@ -17,3 +17,8 @@ This repository contains a version of the Cellpose nuclei model that has been re
 `python run.py --input /Users/caleb.shibu/Downloads/725018_20240326_163614_DMD1_merged.tif --output /Users/caleb.shibu/Desktop/test-cellpose` 
 
 The output folder would have 2 files `flows.tif` and `masks_pred.tif`.
+
+# Model comparison before and after retrainin:
+
+![ModelComparison](utils/Figures/ModelComparison.png)
+Cyto2 model gave the highest AUC value for CellProbabilty of 2 and FlowThreshold of 0.5. We used that to train cyto2 model with Voltage Imaging data and the AUC value improved for CellProbabilty of -1.0 and FlowThreshold of 0.5. 

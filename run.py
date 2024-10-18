@@ -9,7 +9,7 @@ def main(input, output):
     # Create output folder
     os.makedirs(output, exist_ok=True)
 
-    model = models.CellposeModel(gpu=True, pretrained_model='utils/models/nuclei/nuclei_cellpose_model.pth')
+    model = models.CellposeModel(gpu=True, pretrained_model='utils/models/cyto2/cyto2_cellpose_model.pth')
     
     # Load tiff files
     tiff_files = tif.imread(input)[:, 1, :, :]
