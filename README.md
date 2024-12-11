@@ -3,10 +3,25 @@
 
 This repository contains a version of the Cellpose nuclei model that has been retrained using SLAP2 data. The Cellpose model is a generalist algorithm for cell segmentation.
 
-# 1. Create an conda env
+# 1a. Create an conda env
 `conda create -n cellpose python=3.12`
 
 `conda activate cellpose`
+
+# 1b. For SLAP2 rig only:
+
+1. Create an environment:
+    ```
+    /path/to/python3 -m venv cellpose
+    ```
+
+2. Activate the environment:
+    ```
+    cd to C:\Users\ScanImage\Documents\GitHub\SLAP2-Cellpose
+    cellpose\Scripts\activate
+    ```
+
+## [Warning] Run either 1a or 1b based on your setup. 
 
 # 2. Install cellpose
 `pip install -U --no-cache-dir git+https://www.github.com/mouseland/cellpose.git`
@@ -22,3 +37,4 @@ The output folder would have 2 files `flows.tif` and `masks_pred.tif`.
 
 ![ModelComparison](utils/Figures/ModelComparison.png)
 Cyto2 model gave the highest AUC value for CellProbabilty of 2 and FlowThreshold of 0.5. We used that to train cyto2 model with Voltage Imaging data and the AUC value improved for CellProbabilty of -1.0 and FlowThreshold of 0.5. 
+
