@@ -33,8 +33,7 @@ This repository contains a version of the Cellpose nuclei model that has been re
 
 The output folder would have 2 files `flows.tif` and `masks_pred.tif`.
 
-# Model comparison before and after retrainin:
+# Model comparison before and after retraining:
 
 ![ModelComparison](utils/Figures/ModelComparison.png)
 Cyto2 model gave the highest AUC value for CellProbabilty of 2 and FlowThreshold of 0.5. We used that to train cyto2 model with Voltage Imaging data and the AUC value improved for CellProbabilty of -1.0 and FlowThreshold of 0.5. 
-
