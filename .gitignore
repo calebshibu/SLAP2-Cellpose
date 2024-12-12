@@ -195,3 +195,4 @@ cellpose/share/man/man1/isympy.1
 *.meta
 'F\tmp\cellpose'
 cellpose
+*.asv
