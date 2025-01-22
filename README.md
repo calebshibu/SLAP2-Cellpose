@@ -1,4 +1,6 @@
 # SLAP2-Cellpose
+
+## Model training and evaluation can be found at https://github.com/AllenNeuralDynamics/FORCEB-kv-refstacks-Cellpose/tree/main
 ## Cellpose Nuclei model retrained with SLAP2 data 
 
 This repository contains a version of the Cellpose nuclei model that has been retrained using SLAP2 data. The Cellpose model is a generalist algorithm for cell segmentation.
