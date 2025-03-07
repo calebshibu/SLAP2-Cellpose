@@ -1,4 +1,5 @@
 # SLAP2-Cellpose
+This repository contains scripts to run pre-trained Cellpose on the SLAP2 rig for voltage imaging experiments. 
 
 ## Model training and evaluation can be found at https://github.com/AllenNeuralDynamics/FORCEB-kv-refstacks-Cellpose/tree/main
 ## Cellpose Nuclei model retrained with SLAP2 data 
